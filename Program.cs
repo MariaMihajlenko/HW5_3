@@ -13,21 +13,19 @@ class Program
         for (int i = 0; i < s; i++)
             a[i] = random.Next(100);
           { for (int i = 0; i <  s; i++)
-            Console.Write(" " + a[i]);}
+            Console.Write(" "  +a[i]);}
         for (int i = 0; i < s; i++)
         {
             if (a[i] < min) 
             min = a[i];
-           i++;
-
-            if (a[i] > min) 
-           min = a[i];
-            i++;
+            if (a[i] > max) 
+           max = a[i];
+            
         }
         
         Console.WriteLine("  ");
         Console.WriteLine("Разность max и min:");
-        Console.Write(max - min);
+        Console.Write(+(max - min));
         
     }
 
